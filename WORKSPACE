@@ -22,3 +22,11 @@ npm_install(
   package_json = "//:package.json",
   package_lock_json = "//:package-lock.lock",
 )
+
+# Install all Bazel dependencies needed for npm packages that supply Bazel rules
+load("@npm//:install_bazel_dependencies.bzl", "install_bazel_dependencies")
+install_bazel_dependencies()
+
+# Setup TypeScript toolchain
+load("@npm_bazel_typescript//:defs.bzl", "ts_setup_workspace")
+ts_setup_workspace()
