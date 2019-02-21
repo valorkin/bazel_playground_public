@@ -10,6 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "@bazel/bazel": "0.22.0",
-    "@bazel/ibazel": "0.9.1"
+    "@bazel/buildifier": "0.20.0",
+    "@bazel/ibazel": "0.9.1",
+    "@bazel/typescript": "0.25.1"
   }
 }
